@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+:root {
+    --font-color: #fefbd8;
+    --background-color: #18442c;
+    --nav-background-color: #257a42;
+
+  }
+ @-webkit-keyframes AnimationBack {
+    0%{background-position:55% 0%}
+    50%{background-position:46% 100%}
+    100%{background-position:55% 0%}
+}
+.body-back {
+    background: linear-gradient(144deg, #4b916b, #145428);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationBack 28s ease infinite;
+   
+}
+
+
+
+body{
+    /* background-color: var(--background-color) ; */
+    font-size: 14px;
+    font-family: inter,Source Sans Pro;
+    color:var(--font-color);
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+#navContent{
+    width: 100%;
+    
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--nav-background-color);
+    top: 0;
+    position: sticky;
+    padding: 0;
+}
+.navItem{
+    font-size: 1.2rem;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.activeNavItem{
+    background-color: #24641f;
+}
+.navItem:hover{
+    background-color: rgba(240, 248, 255, 0.674);
+}
+.navItem:hover a{
+   color: rgb(2, 58, 25);
+}
+#mainTitleBox{
+    width: 100%;
+    height: fit-content;
+    margin-top: 22px;
+}
+#mainTitle{
+    font-size: 6rem;
+    width: fit-content;
+    margin-left: 10%;
+    margin-right: 5%;
+    color: white;
+    /* border-bottom: 3.5px solid #618685; */
+}
+.Titleline{
+    width: 30%;
+    height: 4px;
+    background-color:  #16e76d;
+    transition: all .7s ease-in-out;
+    border-radius: 5px;
+}
+#mainTitle:hover .Titleline{
+    width: 100%;
+}
+#sectionsBox{
+    height: fit-content;
+    padding: 3%;
+    width: 95%;
+}
+.section{
+    padding: 10px;
+    background-color: rgba(81, 128, 100, 0.5);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 12px;
+    height: 85vh;
+}
+.sectionText{
+    color: white;
+    width: 72%;
+}
+.sectionTitle{
+    font-size: 2.5rem;
+    width: fit-content;
+}
+.sectionTitleLine{
+    width: 30%;
+    height: 3.5px;
+    background-color:  #00ff6f;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.sectionTitle:hover .sectionTitleLine{
+    width: 100%;
+}
+.sectionImg{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    min-width: 145px;
+    justify-content: center;
+}
+.sectionImg img{
+    width: 100%;
+    border-radius: 10px ;
+}
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.addSectionButton{
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(100, 237, 171);
+    color: white;
+    cursor: pointer;
+}
